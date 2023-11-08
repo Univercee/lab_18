@@ -1,0 +1,55 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex-grow: 1;
+}
+a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+    color: #666 !important;
+}
+
+a:hover {
+    color: #0d6efd !important;
+}
+
+.card-my {
+    background-color: white;
+    padding: .75rem;
+    cursor: pointer;
+}
+
+.card-my:hover {
+    box-shadow: 5px 5px 10px lightslategrey;
+    z-index: 9999;
+}
+
+.card-my__img {
+    width: 100%;
+}
+
+.card-my__old-price {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.card-my__price {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+
+.card-my__title {
+    font-size: 18px;
+}
+.card-my__sale {
+    font-size: 15px;
+    background-color: #0d6efd;
+    border-radius: 1rem;
+    padding: 0.25rem;
+    color: whitesmoke;
+    margin: 0 .5rem;
+}
