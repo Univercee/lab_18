@@ -5,6 +5,10 @@ body {
 }
 .wrapper{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 a {
     cursor: pointer !important;

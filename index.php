@@ -1,7 +1,9 @@
 <?php
-
+    if(session_id() == '') {
+        session_start();
+    }
     require_once($_SERVER['DOCUMENT_ROOT'].'/Lr/.core/database/index.php');
-
+    require_once($_SERVER['DOCUMENT_ROOT'].'/Lr/.core/controllers/index.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,17 +19,17 @@
 <body >
 
 <?php
- require ('./views/components/header.php');
+ require ('./views/layout/header.php');
 ?>
 
 <div class="wrapper">
     <?php
-    require($_SERVER['DOCUMENT_ROOT'].'/Lr/views/router.php');
+        require('./views/__router.php');
     ?>
 </div>
 
 <?php
- require ('./views/components/footer.php');
+ require ('./views/layout/footer.php');
 ?>
 
 </body>
