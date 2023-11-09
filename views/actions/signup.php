@@ -9,7 +9,7 @@ if(empty($errors)){
     header('Location: /lr');
 }
 else{
-    $_SESSION['signup_errors'] = $errors;
+    $_SESSION['errors'] = $errors;
     header('Location: signup');
 }
 

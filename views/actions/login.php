@@ -9,7 +9,7 @@ if(empty($response["errors"]) && !empty($response["session_token"])){
     header('Location: account');
 }
 else{
-    $_SESSION['signup_errors'] = $response["errors"];
+    $_SESSION['errors'] = $response["errors"];
     header('Location: login');
 }
 

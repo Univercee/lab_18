@@ -24,6 +24,9 @@
 
 <div class="wrapper">
     <?php
+        require ('./views/layout/errors.php');
+    ?>
+    <?php
         require('./views/__router.php');
     ?>
 </div>
