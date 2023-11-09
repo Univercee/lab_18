@@ -1,3 +1,15 @@
+<?php
+    
+    $auth = false;
+    if(isset($_COOKIE['session_token'])){
+        $user = (new UserController())->getByToken($_COOKIE['session_token']);
+        if($user){
+            $auth = true;
+        }
+    }
+
+?>
+
 <header class="py-3">
     <div class=" container-xl">
         <!--  -->
@@ -7,7 +19,7 @@
                 <p class="m-0">Санкт-Петербург</p>
             </div>
             <div class="col-xl-8 col-md-12 d-flex justify-content-start mb-3" style=" overflow: auto;">
-                <div class="d-flex gap-2 example justify-content-center w-100" style="font-size: 14px; min-width: max-content;">
+                <!-- <div class="d-flex gap-2 example justify-content-center w-100" style="font-size: 14px; min-width: max-content;">
                     <div><a href="#">Магазины</a></div>
                     <div><a href="#">Доставка и оплата </a></div>
                     <div><a href="#">Гарантия и возврат </a></div>
@@ -15,7 +27,7 @@
                     <div><a href="#">Эксперт</a></div>
                     <div><a href="#">Дисконт</a></div>
                     <div><a href="#">Комиссионка</a></div>
-                </div>
+                </div> -->
             </div>
             <div class="col-xl-2 col-md-12 d-flex justify-content-center mb-3">
                 <p class="text-end">+7 (812) 385 55 39 <span><i class="fa-solid fa-circle-info"></i></span></p>
@@ -37,18 +49,27 @@
             </div>
             <div class="col-xl-3 col-md-4 text-nowrap mb-3">
                 <div class="d-flex gap-3 justify-content-center">
-                    <a class="d-flex flex-column align-items-center">
-                        <i class="fa-solid fa-cube fs-5"></i>
-                        <p>Статус заказа</p>
-                    </a>
-                    <a class="d-flex flex-column align-items-center" href="/Lr/account">
-                        <i class="fa-regular fa-user fs-5"></i>
-                        <p>Кабинет</p> 
-                    </a>  
-                    <a class="d-flex flex-column align-items-center">  
-                        <i class="fa-solid fa-cart-shopping fs-5"></i>
-                        <p>Корзина</p>    
-                    </a>         
+                    <?php if($auth){ ?>
+
+                        <!-- <a class="d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-cube fs-5"></i>
+                            <p>Статус заказа</p>
+                        </a> -->
+                        <a class="d-flex flex-column align-items-center" href="/Lr/account">
+                            <i class="fa-regular fa-user fs-5"></i>
+                            <p>Кабинет</p> 
+                        </a>  
+                        <!-- <a class="d-flex flex-column align-items-center">  
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                            <p>Корзина</p>    
+                        </a>     -->
+
+                    <?php } else{?>
+
+                        <a class="d-flex flex-column align-items-center" href="/Lr/login">Войти</a>
+                        <a class="d-flex flex-column align-items-center" href="/Lr/signup">Зарегистрироваться</a>
+
+                    <?php } ?>     
                 </div>
             </div>
         </div>
