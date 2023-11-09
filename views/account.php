@@ -116,4 +116,9 @@
         <a class="btn btn-primary text-white col-md-6" href="./account-edit">Редактировать</a>
         <div class="col-md-3"></div>
     </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <a class="btn btn-danger text-white col-md-6" href="./logout">Выйти</a>
+        <div class="col-md-3"></div>
+    </div>
 </div>

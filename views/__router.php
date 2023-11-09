@@ -45,6 +45,9 @@ else {
         case 'account-edit-action':
             include('views/actions/account-edit.php');
             break;
+        case 'logout':
+            include('views/actions/logout.php');
+            break;
         
         //страница по умолчанию
         default:
