@@ -18,7 +18,7 @@
             <p class="bold">ФИО</p>
         </div>
         <div class="col-md-3">
-            <p><?php echo $user["name"]??"не указано"?></p>
+            <p><?php echo empty($user["name"])?"не указано":$user["name"]?></p>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -27,8 +27,20 @@
         <div class="col-md-3">
             <p class="bold">Пол</p>
         </div>
-        <div class="col-md-3">
-            <p><?php echo $user["sex"]==0?"Женский":"Мужской"??"не указано"?></p>
+        <div class="col-md-3">            
+            <p><?php 
+                switch($user["sex"]){
+                    case 0:
+                        echo empty($user["sex"])?"не указано":"Женский";
+                        break;
+                    case 1:
+                        echo "Мужской";
+                        break;
+                    default:
+                        echo "не указано";
+                        break;
+                };
+            ?></p>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -48,7 +60,7 @@
             <p class="bold">Адрес</p>
         </div>
         <div class="col-md-3">
-            <p><?php echo $user["address"]??"не указано"?></p>
+            <p><?php echo empty($user["address"])?"не указано":$user["address"]?></p>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -58,7 +70,7 @@
             <p class="bold">Интересы</p>
         </div>
         <div class="col-md-3">
-            <p><?php echo $user["description"]??"не указано"?></p>
+            <p><?php echo empty($user["description"])?"не указано":$user["description"]?></p>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -68,7 +80,7 @@
             <p class="bold">Ссылка на vk</p>
         </div>
         <div class="col-md-3">
-            <p><?php echo $user["vk_link"]??"не указано"?></p>
+            <p><?php echo empty($user["vk_link"])?"не указано":$user["vk_link"]?></p>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -107,7 +119,19 @@
             <p class="bold">Резус фактор</p>
         </div>
         <div class="col-md-3">
-            <p><?php echo $user["rh_factor"]==0?"Отрицательный":"Положительный"??"не указано"?></p>
+        <p><?php 
+                switch($user["rh_factor"]){
+                    case 0:
+                        echo empty($user["rh_factor"])?"не указано":"Отрицательный";
+                        break;
+                    case 1:
+                        echo "Положительный";
+                        break;
+                    default:
+                        echo "не указано";
+                        break;
+                };
+            ?></p>
         </div>
         <div class="col-md-3"></div>
     </div>

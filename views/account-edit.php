@@ -80,6 +80,7 @@
             </div>
             <div class="col-md-3">
                 <select class="form-select" type="text" name="blood_type" value="<?php echo $user["blood_type"]?>">
+                    <option value="">Не указано</option>
                     <option value="1">I</option>
                     <option value="2">II</option>
                     <option value="3">III</option>
