@@ -10,15 +10,15 @@
         ?>
     </div>
     <h4>Вход</h4>
-    <form action="login-action" method="POST">
+    <form action="login-action" method="POST" class="d-flex flex-column gap-3">
         <div>
-            <input type="text" name="login" placeholder="Имя пользователя">
+            <input class="form-control" type="text" name="login" placeholder="Имя пользователя">
         </div>
         <div>
-            <input type="text" name="password" placeholder="Пароль">
+            <input class="form-control" type="password" name="password" placeholder="Пароль">
         </div>
-        <div>
-            <input type="submit">
+        <div class="mt-3">
+            <input class="btn btn-primary w-100" type="submit" value="Войти">
         </div>
     </form>
 </div>
