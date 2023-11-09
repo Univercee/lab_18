@@ -1,7 +1,7 @@
 <?php
 
 //запрос к базе данных
-$user = new User();
+$user = new UserController();
 $response = $user->login($_POST['login'], $_POST['password']);
 //обработка ответа
 if(empty($response["errors"]) && !empty($response["session_token"])){
