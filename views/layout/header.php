@@ -25,7 +25,9 @@
         <!--  -->
         <div class="row">
             <div class="col-xl-2 col-md-12 d-flex justify-content-center mb-3">
-                <img class="img-responsive" style="max-height: 30px;" src="https://www.fotosklad.ru/local/templates/fotosklad_desktop/frontend/assets/img/logo-d37865cb13fd4afb4e502de9db3b4248.svg" alt="">
+                <a href="/Lr">
+                    <img class="img-responsive" style="max-height: 30px;" src="https://www.fotosklad.ru/local/templates/fotosklad_desktop/frontend/assets/img/logo-d37865cb13fd4afb4e502de9db3b4248.svg" alt="">
+                </a>
             </div>
             <div class="col-xl-7 col-md-8 mb-3">
                 <div class="d-flex gap-2">
@@ -39,7 +41,7 @@
                         <i class="fa-solid fa-cube fs-5"></i>
                         <p>Статус заказа</p>
                     </a>
-                    <a class="d-flex flex-column align-items-center">
+                    <a class="d-flex flex-column align-items-center" href="/Lr/account">
                         <i class="fa-regular fa-user fs-5"></i>
                         <p>Кабинет</p> 
                     </a>  
