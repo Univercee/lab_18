@@ -31,6 +31,9 @@ else {
         case 'account':
             include('views/account.php');
             break;
+        case 'account-edit':
+            include('views/account-edit.php');
+            break;
 
         //обработка форм
         case 'signup-action':
@@ -38,6 +41,9 @@ else {
             break;
         case 'login-action':
             include('views/actions/login.php');
+            break;
+        case 'account-edit-action':
+            include('views/actions/account-edit.php');
             break;
         
         //страница по умолчанию

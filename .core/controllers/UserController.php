@@ -5,7 +5,7 @@ class UserController {
     private $errors;
     public function __construct()
     {
-        $this->user_table = new UserTable;
+        $this->user_table = new User;
         $this->errors = [];
     }
 
@@ -28,8 +28,8 @@ class UserController {
         
     }
 
-    public function getByToken(){
-        $user = $this->user_table->getByToken($_COOKIE['session_token']);
+    public function getByToken(string $token){
+        $user = $this->user_table->getByToken($token);
         return $user;
     }
 
@@ -53,10 +53,17 @@ class UserController {
         return ["errors"=>$this->errors, "session_token"=>$session_token];
     }
 
-    public function edit(string $__image = null, string $__name = null, string $__address = null, bool $__sex = null,
-                        string $__description = null, string $__vk_link = null, int $__blood_type = null, DateTime $__birthday = null,
-                        bool $__rh_factor = null){
-        
+    public function edit(string $name = null, int $sex = null, int $birthday_timestamp = null, string $address = null,
+                        string $description = null, string $vk_link = null, int $blood_type = null,
+                        int $rh_factor = null){
+        $this->errors = [];
+
+        $id = $this->user_table->getIdByToken($_COOKIE['session_token']);
+        $updated = $this->user_table->edit($id, $name, $sex, $birthday_timestamp, $address, $description, $vk_link, $blood_type, $rh_factor);
+        if(!$updated){
+            array_push($this->errors, 'Не удалось обновить профиль');
+        }
+        return $this->errors;
     }
 
     public function delete($id){
