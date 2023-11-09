@@ -21,7 +21,7 @@ class User {
         $query->bindParam(':login', $login);
         $query->execute();
         $user = $query->fetch();
-        if(!password_verify($password, $user["password"])){
+        if(empty($user) || !password_verify($password, $user["password"])){
             return null;
         }
         unset($user["password"]);
@@ -33,7 +33,9 @@ class User {
         $query->bindParam(':session_token', $token);
         $query->execute();
         $user = $query->fetch();
-        unset($user["password"]);
+        if(empty($user)){
+            return null;
+        }
         return $user;
     }
 
@@ -43,7 +45,7 @@ class User {
         $query->execute();
         $user = $query->fetch();
         if(empty($user)){
-            throw new PDOException();
+            return null;
         }
         return $user["id"];
     }
