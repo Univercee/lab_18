@@ -23,5 +23,8 @@
         <div class="mt-3">
             <input class="btn btn-primary w-100" type="submit" value="Зарегистрироваться">
         </div>
+        <div class="text-center">
+            <a href="login">Войти</a>
+        </div>
     </form>
 </div>
