@@ -6,7 +6,9 @@ $errors = $user->add($_POST['login'], $_POST['password'], $_POST['password_verif
 
 //обработка ответа
 if(empty($errors)){
-    header('Location: /lr');
+    $response = $user->login($_POST['login'], $_POST['password']);
+    setcookie("session_token", $response["session_token"], time()+3600, '/', NULL, 0);
+    header('Location: account');
 }
 else{
     $_SESSION['errors'] = $errors;
