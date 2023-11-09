@@ -16,8 +16,13 @@ a {
     color: #666 !important;
 }
 
+
 a:hover {
     color: #0d6efd !important;
+}
+
+a.btn:hover  {
+    color: whitesmoke !important;
 }
 
 .card-my {
