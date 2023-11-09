@@ -21,6 +21,23 @@ class UserController {
         if($this->user_table->checkLoginExist($login)){
             array_push($this->errors, 'Пользователь с таким логином уже существует');
         }
+
+        // chatGPT в помощь при составлении regex)
+        if(!preg_match("/^[a-zA-Z\d!@#$%^&*(),.?\"':{}|<>]*[a-zA-Z][a-zA-Z\d!@#$%^&*(),.?\":{}|<>]*$/", $password)){
+            array_push($this->errors, 'Пароль должен содержать только латинкие буквы');
+        }
+        if(!preg_match("/^.{6,}$/u", $password)){
+            array_push($this->errors, 'Пароль должен содержать как минимум 6 символов');
+        }
+        if(!preg_match("/^(?=.*[A-Z]).+$/", $password)){
+            array_push($this->errors, 'Пароль должен содержать хотя бы одну заглавную латинскую букву');
+        }
+        if(!preg_match("/[!@#$%^&*(),.?\"':{}|<>]/", $password)){
+            array_push($this->errors, 'Пароль должен содержать хотя бы один спецсимвол');
+        }
+        if(!preg_match("/\d/", $password)){
+            array_push($this->errors, 'Пароль должен содержать хотя бы одну цифру');
+        }
         if(empty($this->errors)){
             $this->user_table->create($login, password_hash($password, PASSWORD_DEFAULT));
         }
