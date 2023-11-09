@@ -12,7 +12,7 @@
     <h4>Регистрация</h4>
     <form action="signup-action" method="POST" class="d-flex flex-column gap-3">
         <div>
-            <input class="form-control" type="text" name="login" placeholder="Имя пользователя">
+            <input class="form-control" type="email" name="login" placeholder="E-mail">
         </div>
         <div>
             <input class="form-control" type="password" name="password" placeholder="Пароль">
