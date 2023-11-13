@@ -17,11 +17,11 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-3">
                             <div>
-                                <img src="./public/star.svg" alt="">
-                                <img src="./public/star.svg" alt="">
-                                <img src="./public/star.svg" alt="">
-                                <img src="./public/star.svg" alt="">
-                                <img src="./public/star.svg" alt="">
+                                <img src="./inc/images/star.svg" alt="">
+                                <img src="./inc/images/star.svg" alt="">
+                                <img src="./inc/images/star.svg" alt="">
+                                <img src="./inc/images/star.svg" alt="">
+                                <img src="./inc/images/star.svg" alt="">
                             </div>
                             <a class="text-decoration-underline p-0 m-0">Отзывы (0)</a>
                         </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="row d-flex">
                     <div class="col-xl-4 col-md-6 mb-4">
-                        <img style="width: 100%; height: 100%; object-fit: contain;" src="https://cdn.fotosklad.ru/upload/size_568_568/2bc/2bcd22342ca04cab545edde1fb64f1dc_thumb_13f13ad680ce6b2.png" alt="">
+                        <img style="width: 100%; height: 100%; object-fit: contain;" src="./inc/images/2bcd22342ca04cab545edde1fb64f1dc_thumb_13f13ad680ce6b2.png" alt="">
                     </div>
                     <div class="col-xl-4 col-md-6 mb-4">
                         <div class="d-flex align-items-center gap-1 p-2 mb-3" style="width: max-content; border-radius: 1em; background: #f1f4ec;">
@@ -111,96 +111,96 @@
                     <p style="font-size: 2rem;">С этим товаром покупают</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_239_239/14d/14d9e095c1b51f1c9697fb0e98cbaba1_thumb_fa0753917b93ebd.jpg" alt="">
+                    <img class="card-my__img" src="./inc/images/14d9e095c1b51f1c9697fb0e98cbaba1_thumb_fa0753917b93ebd.jpg" alt="">
                     <p class="card-my__old-price">12 675 ₽</p>
                     <p class="card-my__price">10 140 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
                     <p class="card-my__title">Журавль Falcon Eyes LSB-4JS</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_478_478/a97/a977e0732a8200cc5116edac77c2aac3_thumb_74cec6cc895c056.jpg" alt="">
+                    <img class="card-my__img" src="./inc/images/a977e0732a8200cc5116edac77c2aac3_thumb_74cec6cc895c056.jpg" alt="">
                     <p class="card-my__old-price">32 536 ₽</p>
                     <p class="card-my__price">26 029 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
                     <p class="card-my__title">Импульсный моноблок Jinbei HD-200pro аккумуляторный</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_478_478/52e/5xtk3z43ztpbw508ejeuvb2agz7uz0cy_thumb_74cec6cc895c056.jpg" alt="">
+                    <img class="card-my__img" src="./inc/images/5xtk3z43ztpbw508ejeuvb2agz7uz0cy_thumb_74cec6cc895c056.jpg" alt="">
                     <p class="card-my__old-price">60 636 ₽</p>
                     <p class="card-my__price">48 509 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
                     <p class="card-my__title">Светодиодный осветитель Jinbei EF-300 Bi LED 2700K - 6500K с рефлектором</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_478_478/bca/bca9062b21099d34e52e50b19c68bd68_thumb_74cec6cc895c056.jpg" alt="">
+                    <img class="card-my__img" src="./inc/images/bca9062b21099d34e52e50b19c68bd68_thumb_74cec6cc895c056.jpg" alt="">
                     <p class="card-my__old-price">22 384 ₽</p>
                     <p class="card-my__price">18 499 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
                     <p class="card-my__title">Импульсный моноблок Jinbei DPE II-800</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_478_478/bca/bca9062b21099d34e52e50b19c68bd68_thumb_74cec6cc895c056.jpg" alt="">
+                    <img class="card-my__img" src="./inc/images/bca9062b21099d34e52e50b19c68bd68_thumb_74cec6cc895c056.jpg" alt="">
                     <p class="card-my__old-price">22 384 ₽</p>
                     <p class="card-my__price">18 499 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
                     <p class="card-my__title">Импульсный моноблок Jinbei DPE II-800</p>
                 </div>
                 <div class="col-xl-2 col-md-6 card-my">
-                    <img class="card-my__img" src="https://www.fotosklad.ru/upload/size_478_478/7ab/7aba9c091651c409b3497ce57b8e4aa7_thumb_74cec6cc895c056.png" alt="">
+                    <img class="card-my__img" src="./inc/images/7aba9c091651c409b3497ce57b8e4aa7_thumb_74cec6cc895c056.webp" alt="">
                     <p class="card-my__old-price">28 390 ₽</p>
                     <p class="card-my__price">13 779 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
-                            <img src="./public/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
+                            <img src="./inc/images/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
