@@ -64,6 +64,16 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-3">
+            <p class="bold">Основной тип съемки</p>
+        </div>
+        <div class="col-md-3">
+            <p><?php echo $user["shooting_type"]??"не указано"?></p>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
             <p class="bold">Адрес</p>
         </div>
         <div class="col-md-3">

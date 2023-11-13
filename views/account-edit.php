@@ -1,6 +1,7 @@
 <?php
     if(isset($_COOKIE['session_token'])){
         $user = (new UserController())->getByToken($_COOKIE['session_token']);
+        $shooting_types = (new ShootingTypesController())->getAll();
     }
     else{
         header("Location: login");
@@ -9,6 +10,7 @@
 <div class="container-sm row d-flex flex-column align-items-center mb-5">
     <h2 class="col-md-6">Данные пользователя</h2>
     <form action="account-edit-action" method="POST" enctype="multipart/form-data" class="col-md-12 d-flex flex-column gap-4">
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -19,6 +21,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -29,6 +32,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -42,6 +46,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -52,16 +57,39 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p class="bold">Основной тип съемки</p>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" name="shooting_type_id">
+                    <option value="">Не указано</option>
+                    <?php
+                        foreach ($shooting_types as $key => $value) {
+                            $selected = $value["id"]==$user["shooting_type_id"]?"selected":"";
+                            ?>
+                            <option value="<?php echo $value["id"] ?>" <?php echo $selected ?>><?php echo $value["name"] ?></option>;
+                            <?php
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
                 <p class="bold">Адрес</p>
             </div>
             <div class="col-md-3">
-                <input class="form-control" type="text" name="address" value="<?php echo $user["address"]?>"></input>
+                <input class="form-control" name="address" value="<?php echo $user["address"]?>"></input>
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -72,6 +100,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -99,6 +128,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -112,6 +142,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
