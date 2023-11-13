@@ -70,14 +70,15 @@ class User {
         return !empty($user);
     }
 
-    public function edit($id, $name, $sex, $birthday_timestamp, $address, $description, $vk_link, $blood_type, $rh_factor){
+    public function edit($id, $name, $sex, $image, $birthday_timestamp, $address, $description, $vk_link, $blood_type, $rh_factor){
         $query = $this->pdo->prepare("UPDATE `users`
-                                    SET name = :name, sex = :sex, birthday = FROM_UNIXTIME(:birthday_timestamp), address = :address,
+                                    SET name = :name, image = :image, sex = :sex, birthday = FROM_UNIXTIME(:birthday_timestamp), address = :address,
                                                 description = :description, vk_link = :vk_link, blood_type = :blood_type,
                                                 rh_factor = :rh_factor
                                     WHERE id = :id");
         $query->bindParam(':id', $id);
         $query->bindParam(':name', $name);
+        $query->bindParam(':image', $image);
         $query->bindParam(':sex', $sex);
         $query->bindParam(':birthday_timestamp', $birthday_timestamp);
         $query->bindParam(':address', $address);

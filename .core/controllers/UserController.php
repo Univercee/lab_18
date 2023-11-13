@@ -70,21 +70,38 @@ class UserController {
         return ["errors"=>$this->errors, "session_token"=>$session_token];
     }
 
-    public function edit(string $name = null, int $sex = null, int $birthday_timestamp = null, string $address = null,
+    public function edit(string $name = null, int $sex = null, $image = null, int $birthday_timestamp = null, string $address = null,
                         string $description = null, string $vk_link = null, int $blood_type = null,
                         int $rh_factor = null){
         $this->errors = [];
 
         $id = $this->user_table->getIdByToken($_COOKIE['session_token']);
-        $updated = $this->user_table->edit($id, $name, $sex, $birthday_timestamp, $address, $description, $vk_link, $blood_type, $rh_factor);
-        if(!$updated){
+        try{
+            $img = is_null($image)?null:$id.'.jpg';
+            $this->user_table->edit($id, $name, $sex, $img, $birthday_timestamp, $address, $description, $vk_link, $blood_type, $rh_factor);
+            $this->uploadImage($id, $image);
+        }catch(Exception $e){
             array_push($this->errors, 'Не удалось обновить профиль');
         }
+       
         return $this->errors;
     }
 
     public function delete($id){
 
+    }
+
+
+    private function uploadImage($id, $image) {
+        $path = $_SERVER['DOCUMENT_ROOT'].'/Lr/public/catalog_images/'.$id.'.jpg';
+        if(is_null($image)){
+            if(file_exists($path)){
+                unlink($path);
+            }
+        }
+        else{
+            move_uploaded_file($image["tmp_name"], $path);
+        }
     }
 }
 

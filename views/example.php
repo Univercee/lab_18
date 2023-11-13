@@ -17,11 +17,11 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-3">
                             <div>
-                                <img src="./star.svg" alt="">
-                                <img src="./star.svg" alt="">
-                                <img src="./star.svg" alt="">
-                                <img src="./star.svg" alt="">
-                                <img src="./star.svg" alt="">
+                                <img src="./public/star.svg" alt="">
+                                <img src="./public/star.svg" alt="">
+                                <img src="./public/star.svg" alt="">
+                                <img src="./public/star.svg" alt="">
+                                <img src="./public/star.svg" alt="">
                             </div>
                             <a class="text-decoration-underline p-0 m-0">Отзывы (0)</a>
                         </div>
@@ -116,11 +116,11 @@
                     <p class="card-my__price">10 140 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
@@ -132,11 +132,11 @@
                     <p class="card-my__price">26 029 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
@@ -148,11 +148,11 @@
                     <p class="card-my__price">48 509 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
@@ -164,11 +164,11 @@
                     <p class="card-my__price">18 499 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
@@ -180,11 +180,11 @@
                     <p class="card-my__price">18 499 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
@@ -196,11 +196,11 @@
                     <p class="card-my__price">13 779 ₽<span class="card-my__sale">–20%</span></p>
                     <div class="d-flex gap-2 align-items-center">
                         <div>
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
-                            <img src="./star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
+                            <img src="./public/star.svg" alt="">
                         </div>
                         <p class="m-0 mt-1">0 отзывов</p>
                     </div>
