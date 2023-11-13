@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-md-3"></div>
         <h2 class="col-md-6">
-            <img style="height:200px" src="public/catalog_images/<?php echo $user["image"]??"image_default.jpg" ?>" alt="">
+            <img style="height:200px" src="./inc/catalog_images/<?php echo $user["image"]??"image_default.jpg" ?>" alt="">
         </h2>
         <div class="col-md-3"></div>
     </div>

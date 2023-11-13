@@ -1,4 +1,4 @@
-<main class="py-5" style="background-color: #fafaff;">
+<main class="py-5">
         <div class="container-xl">
             <!--  -->
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
