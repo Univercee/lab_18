@@ -70,7 +70,7 @@ class UserController {
         return ["errors"=>$this->errors, "session_token"=>$session_token];
     }
 
-    public function edit(string $name = null, int $sex = null, $image = null, int $birthday_timestamp = null, int $shooting_type_id, string $address = null,
+    public function edit(string $name = null, int $sex = null, $image = null, int $birthday_timestamp = null, int $shooting_type_id = null, string $address = null,
                         string $description = null, string $vk_link = null, int $blood_type = null,
                         int $rh_factor = null){
         $this->errors = [];
@@ -93,7 +93,7 @@ class UserController {
 
 
     private function uploadImage($id, $image) {
-        $path = $_SERVER['DOCUMENT_ROOT'].'/Lr/public/catalog_images/'.$id.'.jpg';
+        $path = $_SERVER['DOCUMENT_ROOT'].'/Lr/inc/catalog_images/'.$id.'.jpg';
         if(is_null($image)){
             if(file_exists($path)){
                 unlink($path);
