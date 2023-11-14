@@ -77,9 +77,9 @@ class UserController {
 
         $id = $this->table->getIdByToken($_COOKIE['session_token']);
         try{
-            $img = is_null($image)?null:$id.'.jpg';
-            $this->table->edit($id, $name, $sex, $img, $birthday_timestamp, $shooting_type_id, $address, $description, $vk_link, $blood_type, $rh_factor);
-            $this->uploadImage($id, $image);
+            $image = $this->uploadImage($id, $image);
+            $img_name = is_null($image)?null:$id.'.jpg';
+            $this->table->edit($id, $name, $sex, $img_name, $birthday_timestamp, $shooting_type_id, $address, $description, $vk_link, $blood_type, $rh_factor);
         }catch(Exception $e){
             array_push($this->errors, 'Не удалось обновить профиль');
         }
@@ -112,7 +112,9 @@ class UserController {
         }
         catch(Exception $e){
             array_push($this->errors, 'Не удалось загрузить фотографию');
+            $image = null;
         }
+        return $image;
     }
 }
 
