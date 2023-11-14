@@ -83,8 +83,9 @@ class UserController {
         }catch(Exception $e){
             array_push($this->errors, 'Не удалось обновить профиль');
         }
-       
-        return $this->errors;
+        finally {
+            return $this->errors;
+        }
     }
 
     public function delete($id){
@@ -93,14 +94,24 @@ class UserController {
 
 
     private function uploadImage($id, $image) {
-        $path = $_SERVER['DOCUMENT_ROOT'].'/Lr/inc/catalog_images/'.$id.'.jpg';
-        if(is_null($image)){
-            if(file_exists($path)){
-                unlink($path);
+        $allowed_types = ['png', 'jpg'];
+        try {
+            $ext = pathinfo($image['name'], PATHINFO_EXTENSION);
+            if(!in_array($ext, $allowed_types)){
+                throw new Exception();
+            }
+            $path = $_SERVER['DOCUMENT_ROOT'].'/Lr/inc/catalog_images/'.$id.'.jpg';
+            if(is_null($image)){
+                if(file_exists($path)){
+                    unlink($path);
+                }
+            }
+            else{
+                move_uploaded_file($image["tmp_name"], $path);
             }
         }
-        else{
-            move_uploaded_file($image["tmp_name"], $path);
+        catch(Exception $e){
+            array_push($this->errors, 'Не удалось загрузить фотографию');
         }
     }
 }

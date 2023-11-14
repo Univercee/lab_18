@@ -17,7 +17,7 @@
                 <p class="bold">Изображение</p>
             </div>
             <div class="col-md-3">
-                <input class="form-control" type="file" name="image"></input>
+                <input class="form-control" type="file" accept=".jpg, .png" name="image"></input>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -53,7 +53,7 @@
                 <p class="bold">Дата рождения</p>
             </div>
             <div class="col-md-3">
-                <input class="form-control" type="date" name="birthday" value="<?php echo $user["birthday"]?>"></input>
+                <input class="form-control" type="date" name="birthday" max="<?php echo date("Y-m-d");?>" value="<?php echo $user["birthday"]?>"></input>
             </div>
             <div class="col-md-3"></div>
         </div>
